@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Pomodoro Clock</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/timer.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+
+<body>
+
+	<p class="Header">
+		Pomodoro Q Clock 
+		<span style="position:absolute; bottom:0; right:6%; font-size:0.4em">Designed and Coded by <span style="color:orange">Thiago HPC</span></span>
+	</p>
+	<div style="margin-top:100px"></div>
+	
+	<div>
+		<div class="PieTimerWrapper">
+			<p class="InTimerText" id="CurrentTimer" class="Title">Press Play</p>
+			<p class="InTimerText" id="CurrentTime">00:00</p>
+		</div>
+	</div>
+
+	<div class="TimeControlGroup">
+		<button class="fa fa-chevron-up" onclick="IncrementBreakTime(1)"></button>
+		<p id="BreakTime">5</p>
+		<button class="fa fa-chevron-down" onclick="IncrementBreakTime(-1)"></button>
+		<p>Break</p>
+	</div>
+	
+	<button class="ButtonIcon fa fa-play" onclick="ToggleTimer()" id="ToggleButton"></button>
+	<button class="ButtonIcon fa fa-undo" onclick="ResetTimer()"></button>
+	
+	<div class = "TimeControlGroup">
+		<button class="fa fa-chevron-up" onclick="IncrementSessionTime(1)"></button>
+		<p id="SessionTime">25</p>
+		<button class="fa fa-chevron-down" onclick="IncrementSessionTime(-1)"></button>
+		<p>Session</p>
+	</div>
+	
+	
+	<div id="Wiki">
+		<p>
+			The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. 
+			These intervals are named pomodoros, the plural in English of the Italian word pomodoro (tomato), after the tomato-shaped kitchen timer that Cirillo used as a university student.
+			Closely related to concepts such as timeboxing and iterative and incremental development used in software design, the method has been adopted in pair programming contexts.
+			<br><br>
+			I would personaly not recomend this method to other programers as it takes some time for a programer to get "zoned in". Having to refocus and 
+			"re-zone" every 25 minutes does not sound efficiant.
+		</p>
+	</div>
+
+</body>
+
+
+</html>
