@@ -20,6 +20,9 @@ function GetBreakTime()
 {
 	return Number(document.getElementById("BreakTime").textContent);
 }
+
+/*================================================================*/
+
 function IncrementBreakTime(increment)
 {
 	var ui = document.getElementById("BreakTime");
@@ -36,6 +39,9 @@ function IncrementSessionTime(increment)
 	
 	ui.textContent = numberValue;
 }
+
+/*================================================================*/
+
 function UpdateCurrentTimeUI(timeString)
 {
 	document.getElementById("CurrentTime").textContent = timeString;
@@ -44,6 +50,9 @@ function SetTimerTitle(newTitle)
 {
 	document.getElementById("CurrentTimer").textContent = newTitle;
 }
+
+/*================================================================*/
+
 function ToggleIconToPlay()
 {
 	document.getElementById("ToggleButton").className = "ButtonIcon fa fa-play";
@@ -52,7 +61,6 @@ function ToggleIconToPause()
 {
 	document.getElementById("ToggleButton").className = "ButtonIcon fa fa-pause";
 }
-
 
 function ToggleTimer()
 {
@@ -89,6 +97,10 @@ function ToggleTimer()
 		SetTimerTitle("Session");
 	}
 }
+
+/*================================================================*/
+
+
 function ResetTimer()
 {
 	sessionTimer.Stop();

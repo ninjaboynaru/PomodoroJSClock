@@ -1,6 +1,12 @@
 
-//No getters/setters used for compatibility
+//No getters/setters are used for the purpose of compatibility
 //All methods and properties are public for simplicity
+
+/*
+	Class for managing the passing of time in minutes and seconds.
+	Has callbacks for when the timer increments or finishes.
+	Can count in both directions (up/down)
+*/
 /*Constructor */ function Timer()
 {
 	this.seconds = 0;
